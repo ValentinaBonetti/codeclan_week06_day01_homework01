@@ -145,6 +145,8 @@ console.log("EPISODE 6 \n");
 
 // let murderer = 'Colonel Mustard';
 //
+
+
 // const changeMurderer = function() {
 //   murderer = 'Mr. Green';
 //
@@ -155,9 +157,13 @@ console.log("EPISODE 6 \n");
 //   plotTwist();
 // }
 //
+//
+//
 // const declareMurderer = function () {
 //   return `The murderer is ${murderer}.`;
 // }
+//
+//
 //
 // changeMurderer();
 // const verdict = declareMurderer();
@@ -178,6 +184,7 @@ console.log("EPISODE 7 \n");
 //
 // let murderer = 'Professor Plum';
 //
+//
 // const changeMurderer = function() {
 //   murderer = 'Mr. Green';
 //
@@ -194,21 +201,24 @@ console.log("EPISODE 7 \n");
 //   plotTwist();
 // }
 //
+//
 // const declareMurderer = function() {
 //   return `The murderer is ${murderer}.`;
 // }
 //
+//
 // changeMurderer();
 // const verdict = declareMurderer();
 // console.log(verdict);
-
-
+//
+//
 console.log("\n");
 
 // EXPECTED: The murderer is Miss Scarlet.
 // reason: The function is declare within the previous and cannot be used outside.
 // ACTUAL: The murderer is Mr. Green.
-// Comment: I can't see why...
+// Comment: I can see why now, I think... Hypothesis: the unexpectedOutcome
+// murderer refers to the local one of plotTwist!
 
 
 
@@ -242,9 +252,11 @@ console.log("EPISODE 8 \n");
 //   plotTwist('Dining Room');
 // }
 //
+//
 // const declareWeapon = function() {
 //   return `The weapon is ${scenario.weapon}.`
 // }
+//
 //
 // changeScenario();
 // const verdict = declareWeapon();
